@@ -10,4 +10,11 @@ public class WriterToCsv {
 
         }
     }
+
+    public void writeOneLine(PrintWriter writerCsv, String linew){
+        if (linew.length() > 0) {
+            System.out.println(linew);
+            writerCsv.println(linew);
+        }
+    }
 }
